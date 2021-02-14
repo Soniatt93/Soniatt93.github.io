@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://soniatt93.github.io/">
-    <img alt="Gatsby" src="./src/static/logo_noalpha.svg" width="100" />
+    <img alt="Gatsby" src="./assets/img/favicon.png" width="100" />
     <h2 align="center">Sonia Torres</h2>
   </a>
 </p> 
