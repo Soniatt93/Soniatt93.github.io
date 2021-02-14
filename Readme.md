@@ -13,7 +13,7 @@
 
 ### Website UI Gallary
 #### Home 
-![Sonia Torres Site Preview](./assets/img/screenshot.png)
+![Sonia Torres Site Preview](./assets/img/screenshot.jpg)
 
 ### Demo
 For Demo of this template you can visit https://.com/free-html-bootstrap-template-my-resume/
