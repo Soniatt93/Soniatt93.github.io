@@ -763,8 +763,7 @@ section {
 
 .contact .php-email-form .error-message {
   display: none;
-  color: #fff;
-  background: #ed3c0d;
+  color: rgb(206, 17, 17);
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -776,8 +775,7 @@ section {
 
 .contact .php-email-form .sent-message {
   display: none;
-  color: #fff;
-  background: #18d26e;
+  color: #18d26e;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -964,8 +962,4 @@ section {
 
 #footer .copyright {
   margin: 0 0 5px 0;
-}
-
-#footer .credits {
-  font-size: 13px;
 }
