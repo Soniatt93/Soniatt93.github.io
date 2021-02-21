@@ -385,36 +385,48 @@ section {
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
-.skills .progress {
-  height: 50px;
-  display: block;
-  background: none;
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 0 solid rgba(33,40,50,.125);
+  border-radius: .35rem;
 }
 
-.skills .progress .skill {
-  padding: 10px 0;
-  margin: 0 0 6px 0;
+.card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.35rem;
+}
+
+.card .card-body > i {
+  color:#1D809F;
+  height: 40px;
+}
+
+.card .card-body > svg {
+  fill:#1D809F;
+}
+
+.card .card-body > h4 {
+  font-size: 13px;
+  color: #292929;
+  letter-spacing: 0.1em;
+  font-weight: 500;
   text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #45505b;
 }
 
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-
-.skills .progress-bar-wrap {
-  background: #f2f3f5;
-}
-
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: .9s;
-  background-color: #1D809F;
+.card .card-body > hr {
+  margin-right: 0;
+  margin-left: 0;
+  height:2px;
+  border-width:0;
+  color:#1D809F;
+  background-color:#1D809F;
 }
 
 /*--------------------------------------------------------------
@@ -476,6 +488,42 @@ section {
   top: 0;
   background: #fff;
   border: 2px solid #1D809F;
+}
+
+/*PROGRESS LANGUAGUES*/
+.resume .progress {
+  height: 50px;
+  display: block;
+  background: none;
+}
+
+.resume .progress .language {
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #1D809F;
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+
+.resume .progress .language .val {
+  float: right;
+  font-style: normal;
+  font-size: small;
+  color: #45505b;
+}
+
+.resume .progress-bar-wrap {
+  background: #f2f3f5;
+}
+
+.resume .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: .9s;
+  background-color: #1D809F;
 }
 
 /*--------------------------------------------------------------

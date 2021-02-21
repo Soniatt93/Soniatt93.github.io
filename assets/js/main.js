@@ -123,8 +123,8 @@
     time: 1000
   });
 
-  // Skills section
-  $('.skills-content').waypoint(function() {
+  // Resume section - Languages
+  $('.languages-content').waypoint(function() {
     $('.progress .progress-bar').each(function() {
       $(this).css("width", $(this).attr("aria-valuenow") + '%');
     });
