@@ -8,5 +8,7 @@
 
 ![Sonia Torres Site Preview](./assets/img/screenshot.jpg)
 
+<!--
 ### Demo
 For Demo of this template you can visit <a href="https://bootstrapmade.com/demo/MyResume/">bootstrapmade</a> 
+-->
