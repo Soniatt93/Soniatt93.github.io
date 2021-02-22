@@ -403,9 +403,13 @@ section {
   padding: 1.35rem;
 }
 
-.card .card-body > i {
+.card .card-body > p > i {
   color:#1D809F;
-  height: 40px;
+}
+
+.card .card-body > p > i > span {
+  color:#272829;
+  font-weight: lighter;
 }
 
 .card .card-body > svg {
