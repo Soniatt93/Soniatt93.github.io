@@ -407,13 +407,9 @@ section {
   color:#1D809F;
 }
 
-.card .card-body > p > i > span {
+.card .card-body > p > span {
   color:#272829;
   font-weight: lighter;
-}
-
-.card .card-body > svg {
-  fill:#1D809F;
 }
 
 .card .card-body > h4 {
