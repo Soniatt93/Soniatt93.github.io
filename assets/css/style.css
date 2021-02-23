@@ -386,38 +386,12 @@ section {
 # Skills
 --------------------------------------------------------------*/
 .card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 0 solid rgba(33,40,50,.125);
-  border-radius: .35rem;
+border: 1px solid #1D809F;
 }
-
 .card-body {
   flex: 1 1 auto;
   min-height: 1px;
   padding: 1.35rem;
-}
-
-.card .card-body > p > i {
-  color:#1D809F;
-}
-
-.card .card-body > p > span {
-  color:#272829;
-  font-weight: lighter;
-}
-
-.card .card-body > h4 {
-  font-size: 13px;
-  color: #292929;
-  letter-spacing: 0.1em;
-  font-weight: 500;
-  text-transform: uppercase;
 }
 
 .card .card-body > hr {
@@ -427,6 +401,20 @@ section {
   border-width:0;
   color:#1D809F;
   background-color:#1D809F;
+}
+
+.card .card-body > span {
+  color:#272829;
+  font-weight: lighter;
+}
+
+.card-footer{
+  border: none;
+  background-color: white;
+}
+
+.card .card-footer > i {
+  color:#1D809F;
 }
 
 /*--------------------------------------------------------------
