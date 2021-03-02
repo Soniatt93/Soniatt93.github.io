@@ -7,7 +7,7 @@
 
   <title>Sonia Torres | Full-Stack Developer</title>
   <meta content="Multiplatform developer and passionate about UI/UX design" name="description">
-  <meta content="desarrollador, Andorid Developer, desarrollador android, desarrollador web, Web Developer, UI/UX Design" name="keywords">
+  <meta content="desarrollador, Andorid Developer, desarrollador android, desarrollador web, Web Developer, UI/UX Design, Sonia Torres" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -33,29 +33,10 @@
 
 <body>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="fas fa-bars"></i></button>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
-    
-    <nav class="nav-menu">
-      <ul>
-        <li class="active"><a href="#home"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#portfolio"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-        <li><a href="#services"><i class="bx bx-server"></i> <span>Services</span></a></li>
-        <li><a href="#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-      </ul>
-    </nav><!-- .nav-menu -->
-
-  </header><!-- End Header -->
-
   <!-- ======= Home Section ======= -->
   <section id="home" class="d-flex flex-column justify-content-center">
 
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+    <div class="home-container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Sonia Torres</h1>
       <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer"></span></p>
       <div class="social-links">
@@ -68,6 +49,44 @@
 
   </section><!-- End Home -->
 
+  <!-- ======= Navbar ======= -->
+  <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+
+    <a class="navbar-brand" href="#"><img src="assets/img/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="logo"> Sonia Torres</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home"><i class="bx bxs-home"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about"><i class="bx bxs-user"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills"><i class="bx bxs-collection"></i> Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resume"><i class="bx bxs-file"></i> Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio"><i class="bx bxs-dashboard"></i> Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services"><i class="bx bxs-briefcase"></i> Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact"><i class="bx bxs-envelope"></i> Contact</a>
+          </li>
+        </ul>
+
+    </div>
+  </nav><!-- End Navbar -->
+
+  <!-- ======= Main ======= -->
   <main id="main">
 
     <!-- ======= About Section ======= -->
@@ -81,7 +100,7 @@
 
         <div class="row">
           <div class="col-lg-3 col-md-4 d-flex justify-content-center align-self-center">
-            <img src="assets/img/profile-icon.svg" class="img-fluid" alt="icon profile">
+            <img src="assets/img/profile-icon.svg" class="img-fluid zoom" alt="icon profile">
           </div>
           <div class="col-lg-9 col-md-8 pt-4 content text-justify">
             <h3>Full-Stack Developer</h3>
@@ -400,6 +419,7 @@
                 <h4>InVision</h4>
                 <p>Prototype</p>
                 <div class="portfolio-links">
+                  <a href="https://soniatt.invisionapp.com/public/prototype/skgdn4mha004nw40143g5ztj2/1391a5c4" class="details-link" target="_blank" rel="external"><i class="bx bxl-invision"></i></a>
                   <a href="portfolio/portfolio-details" class="details-link"><i class="bx bxs-info-circle"></i></a>
                 </div>
               </div>
@@ -462,12 +482,12 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/contactapp-list.webp" class="img-fluid" alt="ContactApp - Contact list">
               <div class="portfolio-info">
                 <h4>ContactsApp</h4>
-                <p>Web</p>
+                <p>Web App</p>
                 <div class="portfolio-links">
                   <a href="https://github.com/Soniatt93/ionic-firestore-crud" class="details-link" target="_blank" rel="external"><i class="bx bxl-github"></i></a>
                   <a href="https://stt-contactsapp.web.app/home" class="details-link" target="_blank" rel="external"><i class="bx bx-link"></i></a>
@@ -570,10 +590,8 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
-
+  <footer id="footer" class="bg-ligth">
     <div class="container">
-
       <div class="row mt-1">
         <div class="mx-auto">
           <img src="assets/img/logo.svg" width="35" height="35" class="img-fluid my-3" alt="logo">
@@ -591,9 +609,7 @@
           </div>
         </div>
       </div>
-      
     </div>
-
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
