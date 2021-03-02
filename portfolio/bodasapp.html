@@ -18,22 +18,40 @@
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
 
-  <!-- CSS Files -->
+  <!-- Vendor CSS Files -->
   <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
 
+  <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
 
 </head>
 
 <body>
   
-  <!-- ======= Navbar ======= -->
-  <div id="navbarPortfolio" class="sticky-top"></div>
-  <!-- End Navbar -->
+  <!-- ======= Mobile nav toggle button ======= -->
+  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
-  <main id="main" style="min-height:94vh"> 
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="../"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="../#about"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="../#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+        <li><a href="../#portfolio"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+        <li><a href="../#services"><i class="bx bx-server"></i> <span>Services</span></a></li>
+        <li><a href="../#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </header><!-- End Header -->
+
+  <main id="main" style="min-height:100vh"> 
 
     <!-- ======= Breadcrumbs Section ======= -->
     <section class="breadcrumbs">
@@ -41,6 +59,7 @@
 
         <div class="d-flex float-right">
           <ol>
+            <li><a href="../">Home</a></li>
             <li><a href="../#portfolio">Portfolio</a></li>
             <li>BodasApp</li>
           </ol>
@@ -55,18 +74,18 @@
 
         <div class="row">
 
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4">
             <h2 class="portfolio-title">BodasApp</h2>
             <div class="owl-carousel portfolio-details-carousel">
               <img src="../assets/img/portfolio/bodasapp-splash.webp" class="img-fluid" alt="BodasApp - Splash">
               <img src="../assets/img/portfolio/bodasapp-carousel.webp" class="img-fluid" alt="BodasApp - Carousel">
-              <img src="../assets/img/portfolio/bodasapp-register.webp" class="img-fluid" alt="BodasApp - Register">
+              <img src="../assets/img/portfolio/bodasapp-register.webp.webp" class="img-fluid" alt="BodasApp - Register">
               <img src="../assets/img/portfolio/bodasapp-login.webp" class="img-fluid" alt="BodasApp - Login">
               <img src="../assets/img/portfolio/bodasapp-home.webp" class="img-fluid" alt="BodasApp - Home">
             </div>
           </div>
 
-          <div class="col-lg-8 col-md-6 portfolio-info align-self-end mb-3">
+          <div class="col-lg-8 portfolio-info">
             <h3>Project information</h3>
             <ul>
               <li><strong>Category</strong>: Andorid App</li>
@@ -119,14 +138,18 @@
   <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
   <div id="preloader"></div>
 
-  <!-- JS Files -->
+  <!-- Vendor JS Files -->
   <script src="../assets/vendor/jquery/jquery.min.js"></script>
   <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
   <script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
   <script src="../assets/vendor/counterup/counterup.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/venobox/venobox.min.js"></script>
   <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../assets/vendor/typed.js/typed.min.js"></script>
 
+  <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
 
 </body>
