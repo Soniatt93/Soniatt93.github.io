@@ -23,6 +23,16 @@
     });
   }
 
+  // Navigation active state on scroll
+  $(document).ready(function(){
+    $('body').scrollspy({target: ".navbar", offset:52});  
+    $('html, body').animate({scrollTop: $("main>section").offset().top }, "slow");
+  });
+  //hide the url hash
+  window.onhashchange = function () {window.history.pushState('', document.title, window.location.pathname)}
+  //hide collapse navbar on click
+  $('.navbar-nav>li>a').on('click', function(){$('.navbar-collapse').collapse('hide');});
+
   //navbar porfolio
   $(function () {
     var bar = '<nav class="navbar navbar-expand-lg navbar-light bg-light">'+
@@ -43,16 +53,6 @@
     var id = getValueByName("id");
     $("#" + id).addClass("active");
   });
-
-  // Navigation active state on scroll
-  $(document).ready(function(){
-    $('body').scrollspy({target: ".navbar", offset:52});  
-    $('html, body').animate({scrollTop: section.scrollTop()});
-  });
-  //hide the url hash
-  window.onhashchange = function () {window.history.pushState('', document.title, window.location.pathname)}
-  //hide collapse navbar on click
-  $('.navbar-nav>li>a').on('click', function(){$('.navbar-collapse').collapse('hide');});
 
   // Back to top button
   $(window).scroll(function() {
