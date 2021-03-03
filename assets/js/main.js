@@ -25,27 +25,28 @@
 
   // Navigation active state on scroll
   $(document).ready(function () {
-    $('html, body').scrollspy({ target: ".navbar", offset: 52 });
-    //$('html, body').animate({ scrollTop: section.scrollTop() }, 2000);
+    $('html, body').scrollspy({ target: ".navbar", offset: 60});
+  });
+  //scroll for the navigation menu and links with .scrollto classes
+  var scrolltoOffset = $('.navbar').outerHeight() - 1;
+  $(document).on('click', '.navbar a, .navbar-collapse a, scrollto', function (e) {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      if (target.length) {
+        e.preventDefault();
+        var scrollto = target.offset().top - scrolltoOffset;
+        $('html, body').animate({
+          scrollTop: scrollto
+        }, 1500, 'easeInOutExpo');
+      }
+      return false
+    }
   });
   //hide the url hash
   window.onhashchange = function () { window.history.pushState('', document.title, window.location.pathname) }
   //hide collapse navbar on click
-  $('.navbar-nav>li>a').on('click', function () {$('.navbar-collapse').collapse('hide');});
-  //scroll for the navigation menu and links with .scrollto classes
-  var scrolltoOffset = $('#header').outerHeight() - 1;
-  $(document).on('click', '.navbar-collapse a, .navbar-nav>li>a, scrollto', function (e) {
-    var target = $(this.hash);
-    if (target.length) {
-      e.preventDefault();
-      var scrollto = target.offset().top - scrolltoOffset;
-      if ($(this).attr("href") == '#header') {
-        scrollto = 0;
-      }
-      $('html, body').animate({
-        scrollTop: scrollto
-      }, 1500, 'easeInOutExpo');
-    }
+  $('.navbar-nav>li>a').on('click', 'scrollto', function(){ 
+    $('.navbar-collapse').collapse('toggle');
   });
 
   //navbar porfolio
