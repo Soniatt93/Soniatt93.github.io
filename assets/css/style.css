@@ -187,9 +187,9 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Navbar
 --------------------------------------------------------------*/
-@media (max-width: 992px) {
+/*@media (max-width: 992px) {
   .collapse{
-    overflow: auto;
+    overflow-y: auto;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -199,7 +199,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 54px;
     padding-left: 10px;
   }
-}
+}*/
 
 .navbar-light .nav-item:focus .nav-link,
 .navbar-light .nav-item:hover .nav-link {
