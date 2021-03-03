@@ -29,7 +29,7 @@
   });
   //scroll for the navigation menu and links with .scrollto classes
   var scrolltoOffset = $('.navbar').outerHeight() - 1;
-  $(document).on('click', '.navbar a, .navbar-collapse a, scrollto', function (e) {
+  $(document).on('click', '.navbar a, scrollto', function (e) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       if (target.length) {
@@ -45,8 +45,9 @@
   //hide the url hash
   window.onhashchange = function () { window.history.pushState('', document.title, window.location.pathname) }
   //hide collapse navbar on click
-  $('.navbar-nav>li>a').on('click', 'scrollto', function(){ 
-    $('.navbar-collapse').collapse('toggle');
+  $('.navbar-nav>li>a').on('click', function(){ 
+    $('.navbar-collapse').collapse('hide');
+    ;
   });
 
   //navbar porfolio

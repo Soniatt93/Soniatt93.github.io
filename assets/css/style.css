@@ -19,17 +19,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
-.navbar-light .nav-item:focus .nav-link,
-.navbar-light .nav-item:hover .nav-link {
-  color: #2f98b8;
-  font-weight: bold;
-}
-
-.navbar-light .nav-item .nav-link.active{
-  color: #1D809F;
-  font-weight: bold;
-}
-
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -194,6 +183,34 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 24px;
   }
 }
+
+/*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+.navbar-collapse{
+  overflow: auto;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: auto;
+  color: #e1ffff;
+  margin-top: 54px;
+  padding-left: 10px;
+}
+
+.navbar-light .nav-item:focus .nav-link,
+.navbar-light .nav-item:hover .nav-link {
+  color: #2f98b8;
+  font-weight: bold;
+}
+
+.navbar-light .nav-item .nav-link.active{
+  color: #1D809F;
+  font-weight: bold;
+}
+
+
 
 /*--------------------------------------------------------------
 # Sections General
