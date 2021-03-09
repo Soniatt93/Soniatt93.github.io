@@ -47,7 +47,6 @@
   //hide collapse navbar on click
   $('.navbar-nav>li>a').on('click', function(){ 
     $('.navbar-collapse').collapse('hide');
-    ;
   });
 
   //navbar porfolio

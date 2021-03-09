@@ -188,16 +188,14 @@ h1, h2, h3, h4, h5, h6 {
 # Navbar
 --------------------------------------------------------------*/
 /*@media (max-width: 992px) {
-  .collapse{
-    overflow-y: auto;
-    position: fixed;
+  .navbar-collapse{
+    position: sticky;
+    overflow: auto;
+    display: none;
     top: 0px;
     left: 0px;
     width: 100vw;
     height: auto;
-    color: #e1ffff;
-    margin-top: 54px;
-    padding-left: 10px;
   }
 }*/
 
