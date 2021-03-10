@@ -187,18 +187,6 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Navbar
 --------------------------------------------------------------*/
-/*@media (max-width: 992px) {
-  .navbar-collapse{
-    position: sticky;
-    overflow: auto;
-    display: none;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    height: auto;
-  }
-}*/
-
 .navbar-light .nav-item:focus .nav-link,
 .navbar-light .nav-item:hover .nav-link {
   color: #2f98b8;
@@ -209,8 +197,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #1D809F;
   font-weight: bold;
 }
-
-
 
 /*--------------------------------------------------------------
 # Sections General
@@ -252,6 +238,19 @@ section {
 
 .section-title p {
   margin-bottom: 0;
+}
+
+/*Bootstrap*/
+.badge-primary{
+  background-color: #1D809F;
+  margin-left: 10px;
+  vertical-align: text-top;
+}
+.badge-secondary{
+  background-color: #ebf6fa;
+  color: #45505b;
+  margin-left: 10px;
+  vertical-align: text-top;
 }
 
 /*--------------------------------------------------------------
@@ -351,13 +350,8 @@ border: 1px solid #1D809F;
   margin-bottom: 10px;
 }
 
-.resume .resume-item h5 {
-  font-size: 16px;
-  background: #f7f8f9;
-  padding: 5px 15px;
-  display: inline-block;
-  font-weight: 600;
-  margin-bottom: 10px;
+.resume .resume-item span {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .resume .resume-item ul {
@@ -365,7 +359,7 @@ border: 1px solid #1D809F;
 }
 
 .resume .resume-item ul li {
-  padding-bottom: 10px;
+  padding-bottom: 8px;
 }
 
 .resume .resume-item:last-child {

@@ -45,8 +45,17 @@
   //hide the url hash
   window.onhashchange = function () { window.history.pushState('', document.title, window.location.pathname) }
   //hide collapse navbar on click
-  $('.navbar-nav>li>a').on('click', function(){ 
-    $('.navbar-collapse').collapse('hide');
+  $('.navbar-nav>li>a').on('click', function(e){ 
+    $('.navbar-collapse, scrollto').collapse('hide');
+    var target = $(this.hash);
+      if (target.length) {
+        e.preventDefault();
+        var scrollto = target.offset().top - scrolltoOffset  - 260;
+        $('html, body').animate({
+          scrollTop: scrollto
+        }, 1500, 'easeInOutExpo');
+      }
+      return false
   });
 
   //navbar porfolio
