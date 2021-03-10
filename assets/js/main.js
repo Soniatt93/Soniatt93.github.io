@@ -50,7 +50,7 @@
     var target = $(this.hash);
       if (target.length) {
         e.preventDefault();
-        var scrollto = target.offset().top - scrolltoOffset  - 260;
+        var scrollto = target.offset().top  - 230;
         $('html, body').animate({
           scrollTop: scrollto
         }, 1500, 'easeInOutExpo');
