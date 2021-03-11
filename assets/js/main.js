@@ -47,7 +47,7 @@
   //hide collapse navbar on click
   $('.navbar-nav>li>a').on('click', function(e){ 
     $('.navbar-collapse, scrollto').collapse('hide');
-    var target = $(this.hash);
+    /*var target = $(this.hash);
       if (target.length) {
         e.preventDefault();
         var scrollto = target.offset().top  - 230;
@@ -55,7 +55,7 @@
           scrollTop: scrollto
         }, 1500, 'easeInOutExpo');
       }
-      return false
+      return false*/
   });
 
   //navbar porfolio
